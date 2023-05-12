@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+    <title>Dev Intro</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="main">
+        <div class="header">
+            <h4 class="logo">HCAHT<span>.</span>
+            </h4>
+
+            <nav class="navbar">
+                <a class="nav-item">Home</a>
+                <a class="nav-item">Work</a>
+                <a class="nav-item">About</a>
+                <a href="https://github.com/DontCryi3aby?tab=repositories" class="nav-item" target="_blank">Projects<span class="down-icon"><i class="fa-solid fa-chevron-down"></i></span></a>
+                <a class="nav-item">Services</a>
+            </nav>
+
+            <button class="contact-btn">
+                Let's chat
+            </button>
+        </div>
+
+        <div class="container">
+            <div class="content">
+                <div class="info">
+                    <h1 class="name">
+                        <p>Hi! I Am <span class="decoration">UI/UX</span></p>
+                        <span class="multiText"></span>
+                    </h1>
+                    <p class="desc">Designing user interfaces over <span>100 years</span> as a product designer</p>
+                    <div class="action">
+                        <button class="hire-btn">Hire Me</button>
+                        <button class="project-btn">Projects <span><i class="fa-solid fa-arrow-trend-up"></i></span></button>
+                    </div>
+                    <div class="more">
+                        <div class="done">
+                            <div>
+                                <h3>+84</h3>
+                                <p>Clients on work worldwide</p>
+                            </div>
+                            <div>
+                                <h3>572</h3>
+                                <p>Project Done</p>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <h4>Contact</h4>
+                            <p>i3oyhp@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-done">
+                    <div class="left">
+                        <h3>Project Statistics 2022</h3>
+                        <button>Know More</button>
+                    </div>
+                    <div class="right">
+                        <div class="project">
+                            <p>Website Design</p>
+                            <span>24</span>
+                        </div>
+                        <div class="project">
+                            <p>Mobile App Design</p>
+                            <span>03</span>
+                        </div>
+                        <div class="project">
+                            <p>Brand Identity Design</p>
+                            <span>02</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="avatar">
+                <p class="title">
+                    Student at <span>Hanoi University of Industry</span>
+                </p>
+                
+                <button class="icon facebook">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </button>
+                <button class="icon github">
+                    <i class="fa-brands fa-github"></i>
+                </button>
+                <button class="icon phone">
+                    <i class="fa-solid fa-phone"></i>
+                </button>
+                <button class="icon youtube">
+                    <i class="fa-brands fa-youtube"></i>
+                </button>
+
+                <div class="subscribe">
+                    <span>Subscribe my Newsletter</span>
+                    <button class="sub-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal hide">
+        <iframe class="cv" src="./MyCV.pdf#toolbar=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var options = {
+            strings: ["Nguyen Ngoc Thach", "Web Developer"],
+            loop: true,
+            typeSpeed: 60,
+            backSpeed: 40,
+            backDelay: 1500
+        }
+
+        var typingEffect = new Typed('.multiText', options)
+
+        const hireBtn = document.querySelector('.hire-btn')
+        const modal = document.querySelector('.modal')
+        modal.onclick = () => {
+            modal.classList.add('hide')
+        }
+        hireBtn.onclick = () => {
+            modal.classList.remove('hide');
+        }
+    </script>
+</body>
+</html>
